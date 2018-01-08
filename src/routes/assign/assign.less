@@ -1,0 +1,145 @@
+@import "~ui/style/color.less";
+.assign {
+  .tab-content { 
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  }
+  .item-row{
+    margin-left: 100px; 
+  }
+  .content-row {
+    margin-top: 20px;
+    label{
+      width:100px;
+      float: left;
+    }
+    label.require{
+      position: relative;
+      padding-left:8px; 
+      &:before{
+        content: '*';
+        color: red;
+        position: absolute;
+        left: 0px;
+      }
+    }
+    .ant-input {
+      width: 400px;
+      border-radius: 2px;
+      &[type='text'] {
+        height: 35px;
+      }
+    }
+    .ant-select, .ant-select-lg, .ant-select-selection__rendered, .ant-select-selection--single{
+      width: 400px;
+      border-radius: 2px;
+      height: 35px;
+      line-height: 35px;      
+    }
+    .ant-form-item-label{
+      float: left;
+      label{
+        font-size: 14px;
+        color:rgba(0, 0, 0, 0.65);
+        &:after{
+          content: '';
+        }
+      }
+    }
+    .ant-form-item-control-wrapper{
+      margin-left:100px; 
+    }
+    .ant-radio-button-wrapper:first-child{
+      border-radius: 2px 0 0 2px;
+    }
+    .ant-radio-button-wrapper:last-child {
+      border-radius: 0 2px 2px 0;
+    }
+    .ant-radio-group {
+      text-align: center;
+    }
+    .btn-add{
+      color: @theme-color;
+      padding: 0px 6px;
+      margin-left: 4px;
+      border-radius: 2px;
+      height: 32px;
+      font-weight: bold
+    }
+    .shake{
+      position: relative;
+      display: inline-block;
+      padding: 5px 12px;
+      border: 1px solid #f1f1f1;
+      background-color: #f1f1f1;
+      border-radius: 2px;
+      margin: 0 5px 5px 0;
+      min-width: 70px;
+      text-align: center;
+      .item-move {
+          color: #f1f1f1 ;
+          background-color: #999;
+          position: absolute;
+          right: -5px;
+          width: 16px;
+          height: 16px;
+          top: -7px;
+          text-align: center;
+          line-height: 16px;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 15px;
+      }
+    }
+    @-webkit-keyframes spaceboots {
+      0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+      10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+      30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+      40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+      50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+      70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+      80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+      90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+      100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    .shake-constant {
+      -webkit-animation-name: spaceboots!important;
+      -webkit-animation-duration: 0.8s!important;
+      -webkit-transform-origin:50% 50%!important;
+      -webkit-animation-iteration-count: infinite!important;
+      -webkit-animation-timing-function: linear!important;
+    }
+  }
+  .record{
+    .record-title{
+      margin: 15px 0px;
+      color: #080808;
+    }
+    .record-btn{
+      height: 24px;
+      font-size: 13px;
+      border-radius: 2px;
+    }
+  }
+  .link-right{
+    float: right;
+    margin-right: 24px;
+    z-index: 10;
+  }
+  .btn-save{
+    margin-left: 80px; 
+  }
+  .btn-clear{
+    position: absolute;
+    left: 114px;
+    margin-top: -52px;
+  }
+  .ant-calendar-picker {
+    width: 200px;
+  }
+}

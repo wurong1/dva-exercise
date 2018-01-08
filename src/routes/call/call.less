@@ -1,0 +1,30 @@
+@import '~ui/style/color.less';
+.call{
+  h3{
+    text-align: center;
+    background-color: @theme-color;
+    font-weight: bold;
+    padding: 15px 0px;
+    color: white; 
+  }
+  .call-form{
+    .call-row{
+      border-top: 1px solid @border-color;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .call-span{
+      text-align: center;
+      padding: 10px;
+      &:nth-child(odd){
+        border-right: 1px solid @border-color;
+      }
+    }
+    .btn-group{
+      padding-top: 15px; 
+      button{
+        margin-left: 15px;
+      }
+    }
+  }
+}

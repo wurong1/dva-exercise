@@ -1,0 +1,214 @@
+@import "~ui/style/color.less";
+.task-report{
+  .filter-box {
+    border: 2px solid @border-color;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .ant-input {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+    }
+    .ant-dropdown-trigger {
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 2px;
+      text-align: left;
+      padding-left: 7px;
+      i{
+        float: right;
+        margin-top: 10px;
+      }
+    }
+    .ant-select-selection {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+      .ant-select-selection__rendered {
+        line-height: 34px;
+      }
+    }
+    .ant-form-item-label label:after {
+      content: ''
+    }
+    .ant-form-item {
+      margin-bottom: 4px;
+    }
+  }
+  .ant-table {
+    border: 2px solid @border-color;
+    .ant-table-body {
+      border-top-width: 0px;
+    }
+  }
+  .btn-group {
+    position: absolute;
+    right: 21px;
+    margin-top: -56px;
+    button {
+      height: 32px;
+      border-color: @theme-color;
+      color: @theme-color;
+      margin-right: 20px;
+      border-radius: 2px;
+    }
+    button:hover {
+      color:@text-link-hover-color;
+      border-color: @text-link-hover-color;
+    }
+  }
+  .btn-clear{
+    position: absolute;
+    left: 157px;
+    margin-top: -56px;
+    height: 33px;
+  }
+  .result-section {
+    border: 2px solid @border-color;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: @btn-disabled-color;
+    p {
+      font-size: 14px;
+      margin: 0px 0px 14px;
+    }
+    div {
+      .result-item-head {
+        border: 1px solid  @border-color;
+        border-radius: 2px;
+        width: 150px;
+        background-color: @bg-color;
+        padding: 2px 5px 2px 5px;
+        display: inline-block;
+        span {
+          float: right;
+        }
+      }
+      span{
+        margin: 0px 10px;
+      }
+    }
+  }
+  .total-num {
+    position: relative;
+    top: -39px;
+    width: 200px;
+  }
+  .ant-btn-primary{
+    font-size: 14px;
+  }
+}
+.icon-border{
+    margin-right: 10px;
+}
+.a-operate{
+  a:nth-child(1){
+    padding-right: 5px;
+    border-right: 1px solid @theme-color;
+    margin-right: 7px;
+  }
+}
+.report-border {
+  border: 1px solid #e1e1e1;
+  padding: 20px 0 10px 20px;
+}
+.btn-groups {
+  padding: 20px 0 20px 0;
+}
+.callout-report{
+  .ant-row{
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+    width: 100%;
+    &.input-1{
+      width: 8.33333333%;
+    }
+    &.input-2{
+      width: 16.66666667%;
+    }
+  }
+  .double-input{
+    position: absolute;
+    left: 47%;
+    top: 36px;
+  }
+  .info-readonly {
+    border: 2px solid #E4EAEC;
+    padding: 20px 20px 20px 20px;
+  }
+  .info-readonly p {
+    color: #999999;
+    margin-bottom: 5px;
+  }
+  .info-readonly span {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 12px;
+  }
+}
+@media screen and ( max-width: 1300px ) {
+  .callout-report{
+    .ant-row{
+      padding-left: 12px;
+      padding-right: 12px;
+      display: inline-block;
+      width: 100%;
+      &.input-1{
+        width: 16.66666667%;
+      }
+      &.input-2{
+        width: 33.33333333%;
+      }
+    }
+    .double-input{
+      position: absolute;
+      left: 49%;
+      top: 36px;
+    }
+    .info-readonly {
+      border: 2px solid #E4EAEC;
+      padding: 20px 20px 20px 20px;
+    }
+    .info-readonly p {
+      color: #999999;
+      margin-bottom: 5px;
+    }
+    .info-readonly span {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 12px;
+    }
+  }
+}
+.button-container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  .cursor-div {
+    cursor: pointer;
+  }
+  .focus-btn {
+    position: relative;
+    background-color: #00BC8E;
+    color: white;
+    &:after{
+      position: absolute;
+      content: " ";
+      border-top: 5px solid #00BC8E;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      bottom: -5px;
+      left: 50%;
+      margin-left: -5px;
+      box-sizing: inherit;
+    }
+  }
+  .tab-default{
+    margin-right: 20px;
+    display: inline-block;
+    padding: 2px 20px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #dcdcdc;
+  }
+}

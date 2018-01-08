@@ -1,0 +1,23 @@
+{
+  "entry": ["src/index.js", "src/call-out.js"],
+  "publicPath": "/bcrm/",
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime"
+      ],
+      "disableCSSModules": true
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ],
+      "disableCSSModules": true      
+    }
+  },
+  "theme": {
+    "@font-size-base": "14px",
+    "@primary-color": "#40BF89" 
+  }
+}

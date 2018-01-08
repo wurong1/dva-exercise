@@ -1,0 +1,117 @@
+@import '~ui/style/color.less';
+.cms{
+.cursor-div {
+  cursor: pointer;
+}
+.search-container {
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.button-container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.focus-btn {
+  position: relative;
+  background-color: #00BC8E;
+  color: white;
+  &:after{
+    position: absolute;
+    content: " ";
+    border-top: 5px solid #00BC8E;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    box-sizing: inherit;
+  }
+}
+.tab-default{
+  margin-right: 20px;
+  display: inline-block;
+  padding: 2px 20px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #dcdcdc;
+}
+.cms-edit{
+  &>.ant-row{
+    .ant-input {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+    }
+    .ant-select-selection {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+    }
+  }
+  &>.ant-spin-nested-loading{
+    .ant-input {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+    }
+    .ant-select-selection {
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+    }
+  }
+}
+.cms-title{
+  text-align: right;
+  padding: 10px 10px 20px 10px;
+}
+.cms-label{
+  color: #999999;
+  padding-right: 10px;
+  font-size: 12px; 
+}
+.cms-file-section{
+  margin: 20px 0px;
+  &>.ant-col-22{
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+  }
+  .cms-file-list{
+    margin-top: 10px;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 15px;
+    .cms-file{
+      display: inline-block;
+      border: 1px solid #F1F1F1;
+      padding: 5px;
+      margin-right: 10px;
+      &>p{
+        text-align: center;
+      }
+      &>a{
+        padding-right: 6px;
+      }
+    }
+  }
+}
+.article-editor{
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  min-height: 300px;
+  padding: 0px 10px;
+}
+.cms-content-detail{
+  border: 1px solid @border-color;
+  margin: 20px 0px;
+  padding: 20px;
+}
+.cms-link{
+  margin-left: 4px;
+  border: 1px solid @theme-color;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+}
+

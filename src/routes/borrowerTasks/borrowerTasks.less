@@ -1,0 +1,130 @@
+@import "~ui/style/color.less";
+.link-contractor {
+    position: absolute;
+    left: 258px;
+    margin-top: -50px;
+}
+
+.not-create{
+    border: 1px solid @border-color;
+    border-top: none;
+    padding: 30px 15px 20px;
+    margin-bottom: 30px;
+    .ant-form-item-label {
+      text-align: left;
+      label{
+          color: @text-color;
+          font-size: 14px;
+          padding-left: 15px;
+      }
+    }
+}
+
+.span-title{
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 14px!important;
+}
+.tool {
+    position: absolute;
+    right: 40px;
+    top: 155px;
+    line-height: 34pxx;
+    z-index: 10;
+    div.ant-select-selection{
+      border-left: none;
+    }
+    span.label{
+        border: 1px solid #d9d9d9;
+        border-right: none;
+        text-align: center;
+        line-height: 26px;
+        padding-left: 5px;
+        color: @text-color;
+        border-top-left-radius: 2px!important;
+        border-bottom-left-radius: 2px!important;
+    }
+}
+.tab-expand-line p {
+  color: #B3B3B3;
+  font-size: 10px;
+}
+.tab-expand-line span {
+  font-size: 14px;
+}
+.info-container {
+  border: 1px solid #d9d9d9;
+  padding: 35px 25px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.info-container p {
+  color: #B3B3B3;
+  font-size: 10px;
+}
+.info-container span {
+  font-size: 14px;
+}
+.info-container .ant-row {
+  margin-bottom: 20px
+}
+.tab-container {
+  border: 1px solid #d9d9d9;
+}
+.tab-container .ant-col-4 {
+  margin-left: 20px;
+}
+.tab-container button {
+  margin: 33px 20px;
+}
+.loanriver-form-container {
+  border: 1px solid #E4EAEC;
+  border-radius: 2px;
+  .ant-tabs-nav {
+    height: 60px;
+    margin-top: 10px;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #E4EAEC;
+  }
+  .loanriver-form-field {
+    padding: 20px;
+    .ant-form-item-control-wrapper{
+      width: 73%;
+    }
+  }
+  .redonly-info {
+    .ant-row{
+      margin-bottom: 15px;
+    }
+    h3{
+      padding-left: 15px;
+    }
+    div.ant-col-3, div.ant-col-8 {
+      height: 58px;
+      &>p {
+        color: @label-color;
+        margin-bottom: 5px;
+      }
+      &>span {
+        color: @text-color;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.ant-back-top{
+  right: 0px;
+  .ant-back-top-inner {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: @theme-color;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+

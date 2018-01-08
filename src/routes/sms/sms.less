@@ -1,0 +1,65 @@
+@import '~ui/style/color.less';
+.sms {
+  .sms-table {
+    border: 1px solid @border-color;
+  }
+  .sms-btn-group{
+    button{
+      font-size: 13px;
+    }
+  }
+  .sms-link{
+    border: 1px solid @theme-color;
+    padding: 3px 13px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .sms-content{
+    div.ant-select{
+      width: 30%;
+    }
+    .require-label{
+      text-align: right;
+      padding-right: 10px;
+      color: #999;
+      position: relative;
+      font-size: 12px;
+      &:before{
+        content: '*';
+        color: red;
+        position: relative;
+        font-size: 19px;
+        left: -3px;
+      }
+    }
+  }
+  .sms-fr{
+    text-align: right;
+    margin-right: 17%;
+    margin-bottom: 10px;
+    &>span{
+      line-height: 24px;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+  }
+  .sms-section{
+    border: 2px solid @border-color;
+    border-radius: 2px;
+    padding: 30px;
+    .sms-section-label{
+      color: #807B7B;
+      padding: 15px;
+    }
+    &>.ant-form-item{
+      margin-bottom: 10px;
+    }
+    .download-link{
+      position: absolute;
+      top: 40px;
+      left: 15%;
+      font-size: 12px;
+      z-index: 10;
+    }
+  }
+}

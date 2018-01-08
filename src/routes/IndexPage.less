@@ -1,0 +1,57 @@
+@import "~ui/style/color.less";
+
+.dr-layout {
+  height: 100%;
+  .ant-layout{
+    background: none;
+  }
+  .dr-header {
+    height: 83px;
+    background-color: @bg-color;
+    border-bottom: 2px solid @border-color;
+    padding: 0px 40px;
+    .logo {
+     float: left;
+     padding-top: 20px;
+     height: 80px;
+     width: 80px;
+     background-image: url('../assets/logo.png');
+     background-size: 40px 40px;
+     background-repeat: no-repeat;
+     background-position: 20px;
+    }
+  }
+  .dr-content {
+    background-color: @bg-color;
+    padding: 20px 40px 0px 40px;
+
+    .dr-section-font {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  }
+}
+.spin{
+  text-align: center;
+  top: 35%;
+  position: relative;
+  div{
+    font-size: 12px;
+    color:@text-warning-color;
+    margin-top: 10px;
+  }
+}
+.icon-closepsw{
+  &:before{
+    color:@theme-color;
+    font-size:10px; 
+    padding-right: 6px;
+  }
+}
+.icon-showpsw{
+  &:before{
+    color:@theme-color;
+    font-size:10px; 
+    padding-right: 6px;
+  }
+}

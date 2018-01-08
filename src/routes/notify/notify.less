@@ -1,0 +1,106 @@
+@import "~ui/style/color.less";
+.notify{
+  .tab-content {
+    font-size: 14px;
+    border: 2px solid @border-color;
+    padding: 0px 25px;
+    margin-top: 20px;
+    .item {
+      height: 80px;
+      padding-top: 15px;
+      border-bottom: 1px solid @border-color;
+      button{
+        height: 36px;
+        width: 88px;
+        float: right;
+        color: @theme-color;
+        border-color: @theme-color;
+        &:hover{
+            color: @text-link-hover-color;
+            border-color: @text-link-hover-color;
+        }
+      }
+    }
+    .item-bold {
+      font-weight: bold;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 5px;
+        height: 5px;
+        background: #F96868;
+        border-radius: 50%;
+        top: 20px;
+        font-size: 14px;
+        left: -9px;
+      }
+    }
+    p{
+      font-size: 18px;
+      font-weight: bold;
+      margin: 7px 0px;
+      a{
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+    .ant-tabs-ink-bar {
+      background-color:inherit;
+    }
+    .ant-tabs-content{
+      padding-top: 25px;
+      padding-bottom: 53px;
+    }
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar {
+      padding: 25px 25px 25px 0px;  
+      .ant-tabs-tab {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    .ant-tabs-tab{
+      font-size: 14px;
+    }
+    .ant-tabs-tab-active {
+      font-weight: bold;
+    }
+  }
+  .num{
+    background-color: #F96868;
+    line-height: 12px;
+    min-width: 16px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: center;
+    padding: 2px;
+    font-size: 10px;
+    color: white;
+    margin-left: 6px;
+    margin-top: 3px;
+    display: inline-block;
+    font-weight: normal;
+  }
+  .page {
+    margin-top: 15px;
+  }
+  .record {
+    float: right;
+    margin-top: 25px;
+  }
+  .setting-row{
+    margin: 15px;
+    button{
+      height: 29px;
+      width: 59px;
+      color: @theme-color;
+      border-color: @theme-color;
+      &:hover{
+          color: @text-link-hover-color;
+          border-color: @text-link-hover-color;
+      }
+    }
+  }
+}
